@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(Tutorial VERSION 0.0.0)
+project(ViteKnight VERSION 0.0.0)
 
-add_subdirectory(MathFunctions)
+add_subdirectory(Role)
 
-SET(SRC_LIST tutorial.cpp)
+SET(SRC_LIST main.cpp)
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 
-target_link_libraries(${PROJECT_NAME} PUBLIC MathFunctions)
+target_link_libraries(${PROJECT_NAME} PUBLIC Role)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
                            ${PROJECT_BINARY_DIR}
-                           ${PROJECT_SOURCE_DIR}/MathFunctions
+                           ${PROJECT_SOURCE_DIR}/Role
                            )
 
 
