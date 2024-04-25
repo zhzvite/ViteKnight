@@ -2,7 +2,7 @@
 #include<string>
 #include<cstdio>
 #include<Windows.h>
-
+//#include "Role.h"
 #define  wchar_t TCHAR
 //#include"Role.h"
 const int ScreenWidth = 160;
@@ -66,9 +66,11 @@ int main() {
     return 0;
 }
 /*
-   -
+   O
  <-H-<=
   / \
+
+
   O
  >|<
  / \
